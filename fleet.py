@@ -5,13 +5,16 @@ class Fleet:
         self.robots = []
 
     def create_fleet(self):
-        pass
+        robot_one = Robot("Prime")
+        robot_two = Robot("Lazer")
+        robot_three = Robot("Axle")
+        self.robots.append(robot_one)
+        self.robots.append(robot_two)
+        self.robots.append(robot_three)
+        print(f"{robot_one},{robot_two}, and {robot_three} was added to the fleet!")
 
-    def add_robot(self,robots):
-        self.robots.append(robots)
+    
 
-    robot_one = Robot("Prime")
-    robot_two = Robot("Lazer")
-    robot_three = Robot("Axle")
+  
 
     
