@@ -8,3 +8,7 @@ class Robot:
 
     def attack(self, dinosaur):
         pass
+
+    sword = Weapon("Sword", 10)
+    axe = Weapon("Axe", 15)
+    hammer = Weapon("Hammer", 20)
