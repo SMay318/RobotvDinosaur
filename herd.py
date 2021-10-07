@@ -3,6 +3,7 @@ from dinosaur import Dinosaur
 class Herd:
     def __init__(self):
         self.dinosaurs = []
+        self.create_herd()
 
     def create_herd(self):
         dinosaur_one = Dinosaur("Rex", 10)
@@ -11,7 +12,7 @@ class Herd:
         self.dinosaurs.append(dinosaur_one)
         self.dinosaurs.append(dinosaur_two)
         self.dinosaurs.append(dinosaur_three)
-        print(f"{dinosaur_one}, {dinosaur_two}, and {dinosaur_three} were added to the fleet!")
+        print(f"{dinosaur_one.name}, {dinosaur_two.name}, and {dinosaur_three.name}!")
 
 
     
