@@ -6,6 +6,7 @@ class Robot:
         self.name = name
         self.health = 100
         self.weapon = Weapon("sword", 10)
+        
 
     def attack(self, dinosaur):
         self.health.dinosaur = self.weapon - self.health.dinosaur 

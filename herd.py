@@ -12,7 +12,7 @@ class Herd:
         self.dinosaurs.append(dinosaur_one)
         self.dinosaurs.append(dinosaur_two)
         self.dinosaurs.append(dinosaur_three)
-        print(f"{dinosaur_one.name}, {dinosaur_two.name}, and {dinosaur_three.name}!")
+        
 
 
     

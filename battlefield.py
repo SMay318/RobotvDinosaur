@@ -1,5 +1,7 @@
 from fleet import Fleet
 from herd import Herd
+from weapon import Weapon
+
 
 class Battlefield:
     def __init__(self):
@@ -16,6 +18,11 @@ class Battlefield:
     def run_game(self):
         if len(self.herd.dinosaurs) == 3 and len(self.fleet.robots) == 3:
             self.display_welcome()
+        if len(self.fleet.robots) > 0:
+            self.show_robo_options()
+        if len(self.herd.dinosaurs) > 0:
+            self.show_dino_options() 
+
         
 
         pass
@@ -52,14 +59,22 @@ class Battlefield:
 
             pass
 
-    def show_dino_opponent_options(self):
-        ## show dinosaurs health and who is left
+    def show_robo_options(self):
+        index = 0
+        print("Robots are:")
+        for each in self.fleet.robots:
+            print(f"{index} {each.name} / HP-{each.health}")
+            index += 1
+        
         
         pass
 
-    def show_robo_opponent_options(self):
-        ## show robots health and who is left 
-        
+    def show_dino_options(self):
+        index = 0 
+        print("Dinosaurs are:")
+        for each in self.herd.dinosaurs:
+            print(f"{index} {each.name} / HP-{each.health}")
+            index += 1
         pass
     
     def display_winner(self):
